@@ -1,0 +1,48 @@
+<app-search
+  [inputFilter]="filterSearch"
+  (emitFilter)="changueFilter($event)"
+></app-search>
+
+<div class="layout-pages" *ngIf="loading">
+  <app-breadcrumb
+    [filtersList]="filterBreadcrumb"
+  ></app-breadcrumb>
+
+  <section class="section-list">
+    <div class="container">
+      <div *ngFor="let item of items | slice:0:4; let i=index">
+        <ng-container>
+          <div routerLink="/items/{{item.id}}">
+            <div class="items-article">
+              <div class="section">
+                <article>
+                  <div class="section-images">
+                    <img src="{{item.picture}}" alt="">
+                  </div>
+                </article>
+                <article>
+                  <div class="section-details">
+                    <div class="title">
+                      <span>$ {{item.price.amount | number}}</span>
+                      <span class="mercadopago" *ngIf="item.free_shipping">
+                        <img src="assets/images/ic_shipping.png" alt="">
+                      </span>
+                    </div>
+                    <div class="description">
+                      <span>{{item.title}}</span>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <div class="section-address">
+                    <span>{{item.city_name}}</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </section>
+</div>

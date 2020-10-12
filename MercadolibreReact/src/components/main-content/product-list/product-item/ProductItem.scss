@@ -1,0 +1,30 @@
+@import "../../../../index.scss";
+
+.product-item {
+  padding: 16px 0px 16px 16px;
+  border-bottom: 1px $clear-gray solid;
+}
+
+.name {
+  font-size: map-get($font-sizes, "big-size");
+}
+
+.zone {
+  font-size: map-get($font-sizes, "mdedium-size");
+}
+
+.price {
+  font-size: map-get($font-sizes, "small-size");
+}
+
+.product-image {
+  border-radius: 4px;
+}
+
+.vertical-space {
+  font-size: 32px;
+}
+
+li {
+  list-style: none;
+}

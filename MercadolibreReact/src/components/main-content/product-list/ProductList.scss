@@ -1,0 +1,20 @@
+@import '../../../index.scss';
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">" !important;
+}
+
+.breadcrumb>.active a {
+    color: $dark-gray;
+    text-decoration: none;
+}
+
+.breadcrumb>.disabled a {
+    color: $clear-gray;
+    text-decoration: none;
+}
+
+
+.main-body {
+    background-color: white !important;
+}

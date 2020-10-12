@@ -1,0 +1,16 @@
+// Fonts
+@import './fonts/fonts';
+
+@import "./pages/layout";
+@import "./pages/search";
+
+.layout-pages {
+  background: $color-gray2;
+  color: $color-secundary;
+  padding-bottom: 16px;
+  min-height: 92vh;
+
+  @import './pages/breadcrumb';
+  @import "./pages/list";
+  @import "./pages/item";
+}

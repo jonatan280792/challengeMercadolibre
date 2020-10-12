@@ -1,0 +1,43 @@
+.search {
+  background: $color-primary;
+
+  .search-padding {
+    padding: 8px 0 8px;
+
+    .logo {
+      text-align: center;
+    }
+
+    .search-input {
+      height: 100%;
+      width: 100%;
+
+      .input {
+        border: none;
+        border-radius: 4px;
+        color: $color-secundary;
+        height: 100%;
+        padding-left: 10px;
+        position: absolute;
+        width: 100%;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .btn-search {
+        cursor: pointer;
+        margin-right: -6px;
+        position: absolute;
+        right: 0;
+
+        .btn-background {
+          background: $color-gray2;
+          border-radius: 0px 4px 4px 0;
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
+}

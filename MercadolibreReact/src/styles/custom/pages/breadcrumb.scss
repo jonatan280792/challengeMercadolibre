@@ -1,0 +1,25 @@
+.breadcrumb-section {
+  color: $color-whitesmoke;
+  font-size: 14px;
+  padding: 16px 0;
+
+  .breadcrumb {
+    list-style: none;
+
+    li {
+      float: left;
+      margin: 0 5px 0 0;
+
+      .icon-breadcrumb {
+        height: 10px;
+        width: 10px;
+
+        
+      }
+
+      &:last-child svg {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+<app-search
+  [inputFilter]="filterSearch"
+  (emitFilter)="changueFilter($event)"
+></app-search>
+
+<div class="layout-pages"  *ngIf="loading">
+  <app-breadcrumb
+    [filtersList]="filterBreadcrumb"
+  ></app-breadcrumb>
+
+  <section class="section-item">
+    <div class="container">
+      <div class="card-detail mat-elevation-z1">
+        <div class="section-details">
+          <article>
+            <div class="section-image">
+              <img src="{{item.picture}}" alt="">
+            </div>
+            
+          </article>
+          <article>
+            <div class="section-detail">
+              <div class="status">
+                <span>{{ condition }} - {{ item.sold_quantity }} vendidos</span>
+              </div>
+              <div class="title">
+                <h4 class="font-title">{{ item.title }}</h4>
+              </div>
+              <div class="price">
+                <h3 class="font-price">$ {{ item.price.amount | number }}</h3>
+              </div>
+  
+              <div class="section-btn">
+                <button class="btn-buy">Comprar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="section-description">
+          <div class="title-description">
+            <h4 class="title">Descripción del producto</h4>
+          </div>
+          <div class="txt-description">
+            <h4 class="txt">{{ item.description }}</h4>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+</div>
