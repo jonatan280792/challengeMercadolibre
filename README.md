@@ -4,6 +4,14 @@ un avance medio de react y el api con firmas solicitadas en nodeJs.
 
 _Componentes reutilizables, aplicacion escalable y funciones reutilizables.
 
+_Archivos de sesion para mas adelante poder usar el concepto guards
+
+_Se aplica concepto de Lazy Loading, referencia https://angular.io/guide/lazy-loading-ngmodules con fin de lograr cargas diferidas
+
+_Estilos en cascada scss. declaracion de variables
+
+_Fuentes locales en base a la usada por mercadoLibre "Proxima Nova"
+
 _De antemano se que la prueba era de preferencia React pero debido a tiempo de mi trabajo y por mayor experiencia en angular decidi hacer completo
 el mismo en angular, react tambien hize pero conceptos muy basicos, espero no sea impedimiento.
 
